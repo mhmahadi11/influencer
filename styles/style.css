@@ -1,0 +1,436 @@
+/* Google Font  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900K");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+/*----- Reuseable Styles -----*/
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+}
+img {
+  width: 90%;
+  height: auto;
+}
+figure {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-space {
+  padding: 60px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  background: #e02c6d;
+  border-radius: 30px;
+  padding: 10px 25px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #e02c6d;
+}
+.btn:hover {
+  letter-spacing: 0.75px;
+  background: transparent;
+  color: #e02c6d;
+}
+.btn:hover i::before {
+  padding-left: 2px;
+}
+.btn i {
+  vertical-align: middle;
+}
+
+/*----- Header Area Style Start -----*/
+.header-area {
+  position: fixed;
+  left: 0;
+  right: 0;
+  right: 0;
+  background: #fff;
+  z-index: 999;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar #toggle-menu {
+  display: none;
+}
+.navbar .mobile-menu .nav-toggle-menu {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.navbar .mobile-menu .nav-toggle-menu i {
+  font-size: 30px;
+  color: #0a0826;
+}
+.brand-logo .logo {
+  text-decoration: none;
+  color: #e02c6d;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+/*----- Menu Style -----*/
+.nav-menus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+li:not(:last-child) {
+  margin-right: 10px;
+}
+a.menu-link {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+}
+a.menu-link:hover {
+  color: #e02c6d;
+}
+a.active {
+  color: #e02c6d;
+}
+
+/*------ Nav Right Style ------*/
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+.nav-right .search-bar {
+  margin-right: 20px;
+  font-size: 24px;
+}
+.nav-right .shopping-cart {
+  font-size: 24px;
+}
+
+#menu {
+  position: absolute;
+  width: 180px;
+  height: 100vh;
+  margin: -100px 0 0 -235px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/* Bannner Area Style 
+---------------------------------*/
+.banner-area {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.banner-layout {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.banner-content .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 70px;
+  color: #3a3a3a;
+}
+.banner-content .banner-text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3a3a3a;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+.img-area figure.img-box {
+  width: 440px;
+  height: 414px;
+  margin: 0 auto;
+  background: url(../images/circle-design.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* Banner Area Style End 
+---------------------------------*/
+
+/* Logo Area Style Start 
+----------------------------------*/
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.logos img {
+  width: 150px;
+  height: 40px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+/* Logo Area Style End 
+---------------------------------*/
+
+/* Collection Area Style start
+---------------------------------*/
+.collection-area .section-heading {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+  color: #3a3a3a;
+  margin-bottom: 40px;
+}
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.item {
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 17px 15px;
+  border-radius: 5px;
+}
+.item:hover .item-info .item-title a {
+  color: #e02c6d;
+}
+
+.item:hover .img-box img {
+  transform: scale(1.2);
+}
+.item .img-box {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border-radius: 7px;
+}
+.item .img-box img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.item-info {
+  padding-top: 30px;
+}
+.item-info .item-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  color: #18191f;
+  transition: all 0.3s ease-in-out;
+}
+.item-info .item-title a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  color: #18191f;
+  transition: all 0.3s ease-in-out;
+}
+.item-info .price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
+  color: #18191f;
+}
+.item-info .item-review {
+  display: flex;
+  align-items: center;
+}
+.item-info .item-review i {
+  color: #fb8200;
+  font-size: 12px;
+}
+.item-info .item-review .rating {
+  font-weight: 700;
+  font-size: 14px;
+  color: #5e6366;
+  margin-left: 10px;
+}
+.item-info p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.018em;
+  color: #787885;
+}
+.load-more {
+  text-align: right;
+  margin-top: 30px;
+}
+.load-more .load-more-btn {
+  background: transparent;
+  border: none;
+  color: #e02c6d;
+  padding: 0;
+}
+.load-more .load-more-btn:hover {
+  color: #5e6366;
+}
+/* Collection Area Style End 
+---------------------------------*/
+
+/* Subscribe Area Style 
+---------------------------------*/
+.subscribe-area {
+  background: #f8f8f8;
+}
+.subscribe-layout {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+.subscribe-content .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #0a0826;
+}
+.subscribe-content form {
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+}
+.subscribe-content form .form-control {
+  height: 30px;
+  padding: 5px 15px;
+  border: 1px solid #e02c6d;
+  border-radius: 30px;
+  width: 70%;
+  outline: none;
+}
+.subscribe-content form .submit-btn {
+  font-size: 18px;
+  color: #0a0826;
+  margin-left: -50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.subscribe-content form .submit-btn:hover {
+  color: #e02c6d;
+}
+/* Subscribe Area Style End
+---------------------------------*/
+
+/* Footer Area Style 
+---------------------------------*/
+.footer-area {
+  background: #0a0826;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+.footer-area .footer-content .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.footer-area .footer-content p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #d9dbe1;
+  margin-bottom: 20px;
+}
+.footer-area .footer-content .social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer-area .footer-content .social-links a {
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-area .footer-content .social-links a i {
+  font-size: 18px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 90px;
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.footer-area .footer-content .social-links a:hover i {
+  color: #e02c6d;
+  background: rgba(224, 44, 110, 0.1);
+}
+/* Footer Area Style End 
+---------------------------------*/
