@@ -1,18 +1,8 @@
-@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+@media only screen and (max-width: 767.98px) {
   .nav-menus {
     display: none;
   }
 
-  .img-area figure.img-box {
-    width: 70%;
-    height: auto;
-    margin: 0 auto;
-  }
-  .banner-layout {
-    grid-template-columns: 1fr;
-    justify-content: center;
-    text-align: center;
-  }
   .banner-layout .banner-content {
     order: 2;
     margin-top: 80px;
@@ -22,11 +12,20 @@
     order: 1;
   }
 
-  .items {
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
+  .img-area figure.img-box {
+    width: 100%;
   }
 
+  .banner-layout {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .items {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
   .subscribe-layout {
     display: flex;
     justify-content: center;
